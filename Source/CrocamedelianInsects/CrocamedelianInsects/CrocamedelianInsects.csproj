@@ -59,7 +59,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefOfs.cs" />
     <Compile Include="CocoonPatch.cs" />
+    <Compile Include="HaulToHive.cs" />
     <Compile Include="GameComp.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="Util.cs" />

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>Job_HaulCocoonedPawnToHive</defName>
+    <driverClass>CrocamedelianInsects.JobDriver_HaulCocoonedPawnToHive</driverClass>
+    <reportString>hauling cocooned pawn to hive.</reportString>
+    <suspendable>false</suspendable>
+    <checkOverrideOnDamage>Never</checkOverrideOnDamage>
+  </JobDef>
+</Defs>

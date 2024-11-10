@@ -18,7 +18,7 @@ namespace CrocamedelianInsects
         }
 
         // Debug Logging
-        public bool CrIDebugLogging = false;
+        public bool CrIDebugLogging = true;
     }
 
     internal class CrIMod : Mod
