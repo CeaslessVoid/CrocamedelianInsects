@@ -79,25 +79,32 @@ namespace CrocamedelianInsects
         private const float MinDistanceFromHive = 5.0f;
         protected override Job TryGiveJob(Pawn pawn)
         {
-            if (xxx.is_insect(pawn))
+            if (!xxx.is_insect(pawn)) return null;
+            if (pawn.Faction != Faction.OfInsects) return null;
+
+            Thing hive = FindHiveOrHiveLocation(pawn);
+            Pawn cocoonedPawn = FindCocoonedPawn(pawn, hive);
+
+            if (cocoonedPawn == null || hive == null)
+                return null;
+
+            if (!pawn.CanReserveAndReach(cocoonedPawn, PathEndMode.ClosestTouch, Danger.Deadly) ||
+            !pawn.CanReserveAndReach(hive, PathEndMode.Touch, Danger.Deadly))
             {
-                Thing hive = FindHiveOrHiveLocation(pawn);
-                Pawn cocoonedPawn = FindCocoonedPawn(pawn, hive);
-
-                if (cocoonedPawn == null) return null;
-                if (hive == null) return null;
-
-                Job job = JobMaker.MakeJob(CrIDefOf.Job_HaulCocoonedPawnToHive, cocoonedPawn, hive);
-                return job;
+                return null;
             }
-            return null;
+
+            Job job = JobMaker.MakeJob(CrIDefOf.Job_HaulCocoonedPawnToHive, cocoonedPawn, hive);
+            return job;
         }
 
         private Pawn FindCocoonedPawn(Pawn hauler, Thing hive)
         {
 
             return hauler.Map.mapPawns.AllPawnsSpawned
-                .FirstOrDefault(p => p.Downed && p.Position.DistanceTo(hive.Position) > MinDistanceFromHive && p.CurJobDef != CrIDefOf.Job_HaulCocoonedPawnToHive);
+            .FirstOrDefault(p => p.Downed && p.Position.DistanceTo(hive.Position) > MinDistanceFromHive &&
+                                 p.CurJobDef != CrIDefOf.Job_HaulCocoonedPawnToHive &&
+                                 hauler.CanReserve(p));
         }
 
         private Thing FindHiveOrHiveLocation(Pawn hauler)

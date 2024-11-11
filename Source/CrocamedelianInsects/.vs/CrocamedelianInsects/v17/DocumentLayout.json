@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\crocamedelianinsects\\gamecomp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\gamecomp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\crocamedelianinsects\\source\\crocamedelianinsects\\crocamedelianinsects\\haultohive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\haultohive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\crocamedelianinsects\\source\\crocamedelianinsects\\crocamedelianinsects\\defofs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\crocamedelianinsects\\defofs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\defofs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,10 +27,6 @@
       "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\crocamedelianinsects\\gamecomp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\gamecomp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\crocamedelianinsects\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ModSettings.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\ModSettings.cs",
               "RelativeDocumentMoniker": "CrocamedelianInsects\\ModSettings.cs",
@@ -51,12 +51,11 @@
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwB4AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T09:45:40.1Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DefOfs.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\DefOfs.cs",
               "RelativeDocumentMoniker": "CrocamedelianInsects\\DefOfs.cs",
@@ -64,25 +63,24 @@
               "RelativeToolTip": "CrocamedelianInsects\\DefOfs.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T11:45:26.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-10T11:45:26.833Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HaulToHive.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\HaulToHive.cs",
               "RelativeDocumentMoniker": "CrocamedelianInsects\\HaulToHive.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\HaulToHive.cs",
               "RelativeToolTip": "CrocamedelianInsects\\HaulToHive.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAcwGgAAABgAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAwwFMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T11:43:52.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "GameComp.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\GameComp.cs",
               "RelativeDocumentMoniker": "CrocamedelianInsects\\GameComp.cs",
@@ -107,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\Main.cs",
               "RelativeDocumentMoniker": "CrocamedelianInsects\\Main.cs",
@@ -115,12 +113,11 @@
               "RelativeToolTip": "CrocamedelianInsects\\Main.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T09:40:54.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-10T09:40:54.89Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Copy.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\Copy.cs",
               "RelativeDocumentMoniker": "CrocamedelianInsects\\Copy.cs",
@@ -128,8 +125,7 @@
               "RelativeToolTip": "CrocamedelianInsects\\Copy.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T09:05:32.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-10T09:05:32.921Z"
             }
           ]
         }
