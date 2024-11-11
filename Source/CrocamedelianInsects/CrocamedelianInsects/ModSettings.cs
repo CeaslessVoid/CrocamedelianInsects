@@ -17,7 +17,7 @@ namespace CrocamedelianInsects
 
             Scribe_Values.Look<int>(ref this.CrIMinHiveDistance,    "CrIMinHiveDistance",   this.CrIMinHiveDistance,   true);
             Scribe_Values.Look<int>(ref this.CrIMaxHiveDistance,    "CrIMaxHiveDistance",   this.CrIMaxHiveDistance,   true);
-            Scribe_Values.Look<int>(ref this.CrINewHiveCost,        "CrINewHiveCost",       this.CrINewHiveCost,       true);
+            //Scribe_Values.Look<int>(ref this.CrINewHiveCost,        "CrINewHiveCost",       this.CrINewHiveCost,       true);
             Scribe_Values.Look<int>(ref this.CrINewHiveCostPlayer,  "CrINewHiveCostPlayer", this.CrINewHiveCostPlayer, true);
 
 
@@ -30,7 +30,6 @@ namespace CrocamedelianInsects
         public int  CrIMinHiveDistance   = 8;
         public int  CrIMaxHiveDistance   = 14;
 
-        public int  CrINewHiveCost       = 20;
         public int  CrINewHiveCostPlayer = 200;
     }
 

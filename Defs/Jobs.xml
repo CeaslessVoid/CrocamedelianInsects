@@ -11,7 +11,7 @@
   <JobDef>
   <defName>Job_ConsumeJellyAndBuildHive</defName>
   <driverClass>CrocamedelianInsects.JobDriver_ConsumeJellyAndBuildHive</driverClass>
-</JobDef>
+  </JobDef>
 
 
 </Defs>

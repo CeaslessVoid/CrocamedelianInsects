@@ -36,16 +36,12 @@ namespace CrocamedelianInsects
                 yield break;
             }
 
-            // Go to the cocooned pawn
             yield return Toils_Goto.GotoThing(PawnIndex, PathEndMode.Touch);
 
-            // Pick up the cocooned pawn
             yield return Toils_Haul.StartCarryThing(PawnIndex);
 
-            // Go to the hive or hive location
             yield return Toils_Goto.GotoThing(HiveIndex, PathEndMode.Touch);
 
-            // Drop the cocooned pawn at the hive
             Toil placePawn = new Toil();
             placePawn.initAction = () =>
             {
@@ -61,7 +57,6 @@ namespace CrocamedelianInsects
 
         private IntVec3 FindAdjacentEmptyCell(TargetInfo hiveLocationTarget)
         {
-            // Iterate over all 8 adjacent cells around the hive location
             foreach (IntVec3 cell in GenAdj.CellsAdjacent8Way(hiveLocationTarget))
             {
                 if (cell.InBounds(Map) && cell.Walkable(Map) && cell.GetFirstThing(Map, ThingDefOf.Human) == null)

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
+
   	<Operation Class="PatchOperationInsert">
 		<xpath>Defs/DutyDef[defName = "DefendAndExpandHive"]/thinkNode/subNodes/li[@Class="ThinkNode_Tagger"]</xpath>
 		<value>

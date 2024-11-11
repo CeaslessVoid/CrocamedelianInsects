@@ -8,12 +8,12 @@ using Verse;
 using RimWorld;
 using rjw;
 
+
 namespace CrocamedelianInsects
 {
-
     public class JobDriver_ConsumeJellyAndBuildHive : JobDriver
     {
-        private const TargetIndex JellyIndex        = TargetIndex.A;
+        private const TargetIndex JellyIndex = TargetIndex.A;
         private const TargetIndex HiveLocationIndex = TargetIndex.B;
         //private int   RequiredJellyCount            = CrIGameComponent.Settings.CrINewHiveCost;
 
@@ -51,9 +51,12 @@ namespace CrocamedelianInsects
 
     public class ThinkNode_BuildNewHive : ThinkNode_JobGiver
     {
-        private int MinDistanceFromOtherHives = CrIGameComponent.Settings.CrIMinHiveDistance;
-        private int MaxDistanceFromOtherHives = CrIGameComponent.Settings.CrIMaxHiveDistance;
+        //private int MinDistanceFromOtherHives = CrIGameComponent.Settings.CrIMinHiveDistance;
+        //private int MaxDistanceFromOtherHives = CrIGameComponent.Settings.CrIMaxHiveDistance;
         //private int RequiredJellyCount        = CrIGameComponent.Settings.CrINewHiveCost;
+
+        private int MinDistanceFromOtherHives = 8;
+        private int MaxDistanceFromOtherHives = 14;
 
         protected override Job TryGiveJob(Pawn pawn)
         {
@@ -69,12 +72,13 @@ namespace CrocamedelianInsects
             if (jelly == null) return null;
 
             Job job = JobMaker.MakeJob(CrIDefOf.Job_ConsumeJellyAndBuildHive, jelly, hiveLocation);
-            return job;
+            //return job;
+            return null; // TEMP
         }
 
         private Thing FindClosestJelly(Pawn pawn)
         {
-            return pawn.Map.listerThings.ThingsOfDef(ThingDefOf.InsectJelly)
+            return pawn.Map.listerThings.ThingsOfDef(ThingDefOf.InsectJelly) //TEMP ITEM
                 .Where(jelly => pawn.CanReserveAndReach(jelly, PathEndMode.ClosestTouch, Danger.Deadly))
                 .OrderBy(jelly => jelly.Position.DistanceTo(pawn.Position))
                 .FirstOrDefault();
@@ -84,8 +88,8 @@ namespace CrocamedelianInsects
         {
             foreach (IntVec3 cell in GenRadial.RadialCellsAround(pawn.Position, MaxDistanceFromOtherHives, true))
             {
-                if (cell.InBounds(pawn.Map) && cell.Standable(pawn.Map) 
-                    && cell.DistanceTo(pawn.Position) >= MinDistanceFromOtherHives 
+                if (cell.InBounds(pawn.Map) && cell.Standable(pawn.Map)
+                    && cell.DistanceTo(pawn.Position) >= MinDistanceFromOtherHives
                     && IsFarEnoughFromOtherHives(cell, pawn.Map))
                 {
                     return cell;
@@ -100,6 +104,5 @@ namespace CrocamedelianInsects
                 .Any(hive => hive.Position.DistanceTo(cell) < MinDistanceFromOtherHives);
         }
     }
-
 
 }
