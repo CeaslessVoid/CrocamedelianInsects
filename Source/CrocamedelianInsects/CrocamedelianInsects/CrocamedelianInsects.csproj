@@ -43,9 +43,6 @@
     <Reference Include="RJW">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rjw\1.5\Assemblies\RJW.dll</HintPath>
     </Reference>
-    <Reference Include="RJW_Onahole">
-      <HintPath>..\..\..\..\RJW_Onahole\Assemblies\RJW_Onahole.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -63,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuildNewHive.cs" />
+    <Compile Include="BuildOnahole.cs" />
     <Compile Include="HaulToHive.cs" />
     <Compile Include="DefOfs.cs" />
     <Compile Include="CocoonPatch.cs" />

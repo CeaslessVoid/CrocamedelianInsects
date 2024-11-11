@@ -19,8 +19,8 @@ namespace CrocamedelianInsects
 
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            return pawn.Reserve(job.GetTarget(JellyIndex), job)
-                && pawn.Reserve(job.GetTarget(HiveLocationIndex), job);
+            return pawn.Reserve(job.GetTarget(JellyIndex), job, 1, stackCount: 1, errorOnFailed: errorOnFailed)
+                && pawn.Reserve(job.GetTarget(HiveLocationIndex), job, 1, errorOnFailed: errorOnFailed);
         }
 
         protected override IEnumerable<Toil> MakeNewToils()
@@ -30,6 +30,7 @@ namespace CrocamedelianInsects
             yield return Toils_Goto.GotoThing(JellyIndex, PathEndMode.ClosestTouch);
 
             yield return Toils_Haul.StartCarryThing(JellyIndex, putRemainderInQueue: false, subtractNumTakenFromJobCount: false);
+            //yield return Toils_Haul.StartCarryThing(JellyIndex, putRemainderInQueue: false);
 
             yield return Toils_Goto.GotoCell(HiveLocationIndex, PathEndMode.OnCell);
 
@@ -60,18 +61,23 @@ namespace CrocamedelianInsects
 
         protected override Job TryGiveJob(Pawn pawn)
         {
-            if (!xxx.is_insect(pawn)) return null;
-            if (pawn.Faction != Faction.OfInsects) return null;
+            if (pawn.Map == null || !xxx.is_insect(pawn) || pawn.Faction != Faction.OfInsects)
+                return null;
 
-            if (!pawn.Map.listerThings.ThingsOfDef(ThingDefOf.InsectJelly).Any()) return null;
+            if (!pawn.Map.listerThings.ThingsOfDef(ThingDefOf.InsectJelly).Any())
+                return null;
 
             IntVec3 hiveLocation = FindHiveLocation(pawn);
-            if (!hiveLocation.IsValid) return null;
+            if (!hiveLocation.IsValid || !pawn.CanReserve(hiveLocation))
+                return null;
 
             Thing jelly = FindClosestJelly(pawn);
-            if (jelly == null) return null;
+            if (jelly == null || !pawn.CanReserve(jelly))
+                return null;
 
             Job job = JobMaker.MakeJob(CrIDefOf.Job_ConsumeJellyAndBuildHive, jelly, hiveLocation);
+            job.count = 1;
+
             //return job;
             return null; // TEMP
         }
