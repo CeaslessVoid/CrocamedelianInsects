@@ -43,6 +43,9 @@
     <Reference Include="RJW">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rjw\1.5\Assemblies\RJW.dll</HintPath>
     </Reference>
+    <Reference Include="RJW_Onahole">
+      <HintPath>..\..\..\..\RJW_Onahole\Assemblies\RJW_Onahole.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
