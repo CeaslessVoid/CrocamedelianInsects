@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="DefOfs.cs" />
     <Compile Include="CocoonPatch.cs" />
+    <Compile Include="BuildNewHive.cs" />
     <Compile Include="HaulToHive.cs" />
     <Compile Include="GameComp.cs" />
     <Compile Include="ModSettings.cs" />

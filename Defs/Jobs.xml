@@ -7,4 +7,11 @@
     <suspendable>false</suspendable>
     <checkOverrideOnDamage>Never</checkOverrideOnDamage>
   </JobDef>
+
+  <JobDef>
+  <defName>Job_ConsumeJellyAndBuildHive</defName>
+  <driverClass>CrocamedelianInsects.JobDriver_ConsumeJellyAndBuildHive</driverClass>
+</JobDef>
+
+
 </Defs>

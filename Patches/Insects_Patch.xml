@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationInsert">
+  	<Operation Class="PatchOperationInsert">
 		<xpath>Defs/DutyDef[defName = "DefendAndExpandHive"]/thinkNode/subNodes/li[@Class="ThinkNode_Tagger"]</xpath>
 		<value>
 			<li Class="CrocamedelianInsects.ThinkNode_HaulCocoonedPawn" />
@@ -12,4 +12,21 @@
 			<li Class="CrocamedelianInsects.ThinkNode_HaulCocoonedPawn" />
 		</value>
 	</Operation>
+
+
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/DutyDef[defName = "DefendAndExpandHive"]/thinkNode/subNodes/li[@Class="ThinkNode_Tagger"]</xpath>
+		<value>
+			<li Class="CrocamedelianInsects.ThinkNode_BuildNewHive" />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/DutyDef[defName = "DefendHiveAggressively"]/thinkNode/subNodes/li[@Class="JobGiver_HiveDefense"]</xpath>
+		<value>
+			<li Class="CrocamedelianInsects.ThinkNode_BuildNewHive" />
+		</value>
+	</Operation>
+
+	
 </Patch>

@@ -20,12 +20,6 @@ namespace CrocamedelianInsects
             IEnumerable<Hediff> untreatedWounds = __instance.pawn.health.hediffSet.hediffs
                 .Where(hd => !hd.IsTended() && hd.TendableNow());
 
-
-            if (CrIGameComponent.Settings.CrIDebugLogging)
-            {
-                Util.Msg("Tried Healing Pawn");
-            }
-
             foreach (Hediff wound in untreatedWounds)
             {
                 HediffWithComps woundComp = wound as HediffWithComps;

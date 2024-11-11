@@ -12,13 +12,26 @@ namespace CrocamedelianInsects
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look<bool>(ref this.CrIDebugLogging, "CrIDebugLogging", this.CrIDebugLogging, true);
+            Scribe_Values.Look<bool>(ref this.CrIDebugLogging,      "CrIDebugLogging",      this.CrIDebugLogging,      true);
+
+
+            Scribe_Values.Look<int>(ref this.CrIMinHiveDistance,    "CrIMinHiveDistance",   this.CrIMinHiveDistance,   true);
+            Scribe_Values.Look<int>(ref this.CrIMaxHiveDistance,    "CrIMaxHiveDistance",   this.CrIMaxHiveDistance,   true);
+            Scribe_Values.Look<int>(ref this.CrINewHiveCost,        "CrINewHiveCost",       this.CrINewHiveCost,       true);
+            Scribe_Values.Look<int>(ref this.CrINewHiveCostPlayer,  "CrINewHiveCostPlayer", this.CrINewHiveCostPlayer, true);
 
 
         }
 
         // Debug Logging
-        public bool CrIDebugLogging = true;
+        public bool CrIDebugLogging      = true;
+
+        // Hive Expansion
+        public int  CrIMinHiveDistance   = 8;
+        public int  CrIMaxHiveDistance   = 14;
+
+        public int  CrINewHiveCost       = 20;
+        public int  CrINewHiveCostPlayer = 200;
     }
 
     internal class CrIMod : Mod
