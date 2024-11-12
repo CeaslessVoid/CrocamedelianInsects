@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="BuildNewHive.cs" />
     <Compile Include="BuildOnahole.cs" />
+    <Compile Include="CocoonRender.cs" />
     <Compile Include="HaulToHive.cs" />
     <Compile Include="DefOfs.cs" />
     <Compile Include="CocoonPatch.cs" />
