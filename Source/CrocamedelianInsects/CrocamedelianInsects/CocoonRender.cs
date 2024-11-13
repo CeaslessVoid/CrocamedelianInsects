@@ -20,17 +20,17 @@ namespace CrocamedelianInsects
         public override Graphic GraphicFor(Pawn pawn)
         {
             Shader shader = ShaderFor(pawn);
-            String path = "Hediff/";
-            String bodyType = pawn.story.bodyType.defName;
-            String pathString;
+            string path = "Hediff/";
+            string bodyType = pawn.story.bodyType.defName;
+            string pathString = path + "Cocoon_" + bodyType;
 
-            pathString = path + "Cocoon_" + bodyType;
+            Graphic baseGraphic = null;
             if (ContentFinder<Texture2D>.Get(pathString + "_south", false) != null)
             {
-                return GraphicDatabase.Get<Graphic_Multi>(pathString, shader);
+                baseGraphic = GraphicDatabase.Get<Graphic_Multi>(pathString, shader);
             }
-            return null;
+
+            return baseGraphic;
         }
     }
-
 }

@@ -17,6 +17,8 @@ namespace CrocamedelianInsects
         private const TargetIndex HiveLocationIndex = TargetIndex.B;
         //private int   RequiredJellyCount            = CrIGameComponent.Settings.CrINewHiveCost;
 
+        public static bool jobInProgress = false;
+
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
             return pawn.Reserve(job.GetTarget(JellyIndex), job, 1, stackCount: 1, errorOnFailed: errorOnFailed)
@@ -30,7 +32,6 @@ namespace CrocamedelianInsects
             yield return Toils_Goto.GotoThing(JellyIndex, PathEndMode.ClosestTouch);
 
             yield return Toils_Haul.StartCarryThing(JellyIndex, putRemainderInQueue: false, subtractNumTakenFromJobCount: false);
-            //yield return Toils_Haul.StartCarryThing(JellyIndex, putRemainderInQueue: false);
 
             yield return Toils_Goto.GotoCell(HiveLocationIndex, PathEndMode.OnCell);
 
@@ -44,7 +45,18 @@ namespace CrocamedelianInsects
                 }
             };
             buildHive.defaultCompleteMode = ToilCompleteMode.Instant;
+
+            buildHive.AddFinishAction(() => jobInProgress = false);
             yield return buildHive;
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            if (Scribe.mode == LoadSaveMode.Saving || Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                jobInProgress = false;
+            }
         }
     }
 
@@ -56,8 +68,8 @@ namespace CrocamedelianInsects
         //private int MaxDistanceFromOtherHives = CrIGameComponent.Settings.CrIMaxHiveDistance;
         //private int RequiredJellyCount        = CrIGameComponent.Settings.CrINewHiveCost;
 
-        private int MinDistanceFromOtherHives = 8;
-        private int MaxDistanceFromOtherHives = 14;
+        public int MinDistanceFromOtherHives = 8;
+        public int MaxDistanceFromOtherHives = 14;
 
         protected override Job TryGiveJob(Pawn pawn)
         {
@@ -71,15 +83,27 @@ namespace CrocamedelianInsects
             if (!hiveLocation.IsValid || !pawn.CanReserve(hiveLocation))
                 return null;
 
+            if (JobDriver_ConsumeJellyAndBuildHive.jobInProgress)
+                return null;
+
             Thing jelly = FindClosestJelly(pawn);
             if (jelly == null || !pawn.CanReserve(jelly))
+                return null;
+
+            int cocoonedPawnCount = pawn.Map.mapPawns.AllPawnsSpawned
+                .Count(p => p.health?.hediffSet?.HasHediff(HediffDef.Named("RJW_Cocoon")) ?? false);
+            int hiveCount = pawn.Map.listerThings.ThingsOfDef(ThingDef.Named("Hive")).Count();
+
+            if (cocoonedPawnCount + 2 <= hiveCount)
                 return null;
 
             Job job = JobMaker.MakeJob(CrIDefOf.Job_ConsumeJellyAndBuildHive, jelly, hiveLocation);
             job.count = 1;
 
-            //return job;
-            return null; // TEMP
+            JobDriver_ConsumeJellyAndBuildHive.jobInProgress = true;
+
+            return job;
+            //return null; // TEMP
         }
 
         private Thing FindClosestJelly(Pawn pawn)
