@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RimWorld;
+using rjw;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,8 @@ namespace CrocamedelianInsects
         private const float SeverityReductionOnSpread = 0.2f;
         private const float SpreadChance = 0.2f;
         private const int   SpreadTicks = 60000;
+        private const float SeverityThreshold = 0.4f;
+        private const float ChanceToBroken = 0.2f;
 
         private static readonly List<string> TargetBodyParts = new List<string>
         {
@@ -41,6 +45,13 @@ namespace CrocamedelianInsects
             if (this.pawn.IsHashIntervalTick(60000) && this.Severity >= 0.33)
             {
                 ApplyAphrodisiacHediff();
+                ApplySwarmInfectionThought();
+                SpawnMaggots();
+
+                if (this.Part.def.defName == "Genitals" && pawn.gender == Gender.Female && Rand.Chance(ChanceToBroken) && this.Severity >= SeverityThreshold)
+                {
+                    BreakWomb();
+                }
             }
         }
 
@@ -102,6 +113,50 @@ namespace CrocamedelianInsects
                 pawn.health.AddHediff(newUnhealthy);
             }
 
+        }
+
+        private void ApplySwarmInfectionThought()
+        {
+
+            
+            if (xxx.is_zoophile(pawn))
+            {
+                ThoughtDef thoughtDef = ThoughtDef.Named("ZoophileSwarmInfection");
+                pawn.needs.mood.thoughts.memories.TryGainMemory(thoughtDef);
+            }
+            else
+            {
+                ThoughtDef thoughtDef = ThoughtDef.Named("SwarmInfection");
+                pawn.needs.mood.thoughts.memories.TryGainMemory(thoughtDef);
+            }
+            
+        }
+
+        private void SpawnMaggots()
+        {
+            if (pawn == null || pawn.Map == null) return;
+
+            int maggotCount = Rand.RangeInclusive(1, 2);
+
+            for (int i = 0; i < maggotCount; i++)
+            {
+                Thing maggot = ThingMaker.MakeThing(ThingDef.Named("Maggot"));
+                GenPlace.TryPlaceThing(maggot, pawn.Position, pawn.Map, ThingPlaceMode.Near);
+            }
+
+            Thing cum = ThingMaker.MakeThing(ThingDef.Named("FilthInsectCum"));
+            GenPlace.TryPlaceThing(cum, pawn.Position, pawn.Map, ThingPlaceMode.Near);
+        }
+
+        private void BreakWomb()
+        {
+            HediffDef insectBrokenDef = HediffDef.Named("InsectBroken");
+
+            if (insectBrokenDef != null && !this.pawn.health.hediffSet.HasHediff(insectBrokenDef))
+            {
+                Hediff newHediff = HediffMaker.MakeHediff(insectBrokenDef, this.pawn);
+                this.pawn.health.AddHediff(newHediff);
+            }
         }
     }
 

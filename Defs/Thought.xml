@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
+  <ThoughtDef>
+		<defName>SwarmInfection</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>1.0</durationDays>
+		<stackLimit>5</stackLimit>
+		<stackedEffectMultiplier>0.7</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>Body Infested</label>
+				<description>I can feel them crawling inside me... breeding. Its digusting.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+  <ThoughtDef>
+		<defName>ZoophileSwarmInfection</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>1.0</durationDays>
+		<stackLimit>5</stackLimit>
+		<stackedEffectMultiplier>0.7</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>Body Infested</label>
+				<description>My body is swarming with these things, my insides feel sticky, and yet it feels so good...</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 
 </Defs>

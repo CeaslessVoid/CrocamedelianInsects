@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>Maggot</defName>
+    <label>maggot</label>
+    <description>These maggots can be eaten, though they're not particularly filling or nutritious. Surprisingly, they don't spoil easily.</description>
+
+    <thingCategories>
+		<li>AnimalProductRaw</li>
+	</thingCategories>
+
+    <graphicData>
+      <texPath>Things/Items/Maggot</texPath>
+	  <drawSize>2</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <stackLimit>75</stackLimit>
+
+    <statBases>
+      <MarketValue>0.5</MarketValue>
+      <Mass>0.01</Mass>
+      <Nutrition>0.05</Nutrition> 
+
+	  <Beauty>-4</Beauty>
+	  <Cleanliness>-1</Cleanliness>
+	  <DeteriorationRate>0</DeteriorationRate>
+	  <Flammability>2</Flammability>
+    </statBases>
+
+	<ingestible>
+		<foodType>AnimalProduct</foodType>
+		<preferability>DesperateOnlyForHumanlikes</preferability>
+		<baseIngestTicks>25</baseIngestTicks>
+
+		<optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
+		<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+	</ingestible>
+
+  </ThingDef>
+</Defs>

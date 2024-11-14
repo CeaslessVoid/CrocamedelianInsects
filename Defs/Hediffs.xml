@@ -8,7 +8,7 @@
     <tendable>true</tendable>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>0.05</severityPerDay>
+        <severityPerDay>0.02</severityPerDay>
       </li>
     </comps>
 
@@ -76,7 +76,7 @@
 		<label>Induced libido</label>
 		<description>Aphrodisiacs produced by breeding insects.</description>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<scenarioCanAdd>true</scenarioCanAdd>
+		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
@@ -90,6 +90,29 @@
 					<SexFrequency>2</SexFrequency>
 					<SexSatisfaction>0.5</SexSatisfaction>
 				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+  <HediffDef>
+		<defName>InsectBroken</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Ruined Womb</label>
+		<description>Lots of constant intense insect breeding had infected and ruined this pawn's ability to reproduce</description>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<statOffsets>
+					<SexSatisfaction>0.75</SexSatisfaction>
+				</statOffsets>
+
+        <capMods>
+            <li>
+              <capacity>RJW_Fertility</capacity>
+              <setMax>0.0</setMax>
+            </li>
+        </capMods>
 			</li>
 		</stages>
 	</HediffDef>
