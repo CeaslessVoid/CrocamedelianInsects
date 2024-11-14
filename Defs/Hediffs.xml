@@ -19,11 +19,11 @@
           <capMods>
             <li>
               <capacity>BloodPumping</capacity>
-              <offset>0.05</offset>
+              <offset>0.01</offset>
             </li>
             <li>
               <capacity>BloodFiltration</capacity>
-              <offset>0.05</offset>
+              <offset>0.01</offset>
             </li>
 			      <li>
               <capacity>Metabolism</capacity>
@@ -37,11 +37,11 @@
         <capMods>
             <li>
               <capacity>BloodPumping</capacity>
-              <offset>0.07</offset>
+              <offset>0.03</offset>
             </li>
             <li>
               <capacity>BloodFiltration</capacity>
-              <offset>0.07</offset>
+              <offset>0.03</offset>
             </li>
 			      <li>
               <capacity>Metabolism</capacity>
@@ -55,11 +55,11 @@
         <capMods>
             <li>
               <capacity>BloodPumping</capacity>
-              <offset>0.1</offset>
+              <offset>0.05</offset>
             </li>
             <li>
               <capacity>BloodFiltration</capacity>
-              <offset>0.1</offset>
+              <offset>0.05</offset>
             </li>
 			      <li>
               <capacity>Metabolism</capacity>
@@ -69,4 +69,29 @@
       </li>
     </stages>
   </HediffDef>
+
+  <HediffDef>
+		<defName>InsectAphrodisiac</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Induced libido</label>
+		<description>Aphrodisiacs produced by breeding insects.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.9</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<restFallFactor>1.33</restFallFactor>
+				<statOffsets>
+					<SexFrequency>2</SexFrequency>
+					<SexSatisfaction>0.5</SexSatisfaction>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
 </Defs>

@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\hediff_swarminginfection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\crocamedelianinsects\\source\\crocamedelianinsects\\crocamedelianinsects\\debug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\crocamedelianinsects\\debug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\debug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\defofs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\crocamedelianinsects\\source\\crocamedelianinsects\\crocamedelianinsects\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\crocamedelianinsects\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -51,8 +51,7 @@
               "ViewState": "AQIAAAoAAAAAAAAAAAAiwCAAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T09:45:40.1Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "CrocamedelianInsects\\Debug.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T15:27:54.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T15:27:54.081Z"
             },
             {
               "$type": "Document",
@@ -75,7 +73,7 @@
               "RelativeDocumentMoniker": "CrocamedelianInsects\\Hediff_SwarmingInfection.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\Hediff_SwarmingInfection.cs",
               "RelativeToolTip": "CrocamedelianInsects\\Hediff_SwarmingInfection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAADwv2MAAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T14:33:22.828Z",
               "EditorCaption": ""
@@ -90,8 +88,7 @@
               "RelativeToolTip": "CrocamedelianInsects\\BuildNewHive.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAwwEIAAABfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:45:00.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T02:45:00.667Z"
             },
             {
               "$type": "Document",
@@ -103,8 +100,7 @@
               "RelativeToolTip": "CrocamedelianInsects\\CocoonRender.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T13:05:30.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T13:05:30.223Z"
             },
             {
               "$type": "Document",
@@ -116,8 +112,7 @@
               "RelativeToolTip": "CrocamedelianInsects\\Util.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T01:37:53.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T01:37:53.397Z"
             },
             {
               "$type": "Document",
@@ -129,8 +124,7 @@
               "RelativeToolTip": "CrocamedelianInsects\\DefOfs.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T14:12:11.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T14:12:11.123Z"
             }
           ]
         }

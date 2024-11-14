@@ -37,6 +37,11 @@ namespace CrocamedelianInsects
             {
                 TrySpreadToNewBodyPart();
             }
+
+            if (this.pawn.IsHashIntervalTick(60000) && this.Severity >= 0.33)
+            {
+                ApplyAphrodisiacHediff();
+            }
         }
 
         private void TrySpreadToNewBodyPart()
@@ -79,6 +84,24 @@ namespace CrocamedelianInsects
                     this.Severity -= SeverityReductionOnSpread;
                 }
             }
+        }
+
+        private void ApplyAphrodisiacHediff()
+        {
+            HediffDef Aphrodisiac = HediffDef.Named("InsectAphrodisiac");
+
+            Hediff existingAphrodisiac = pawn.health.hediffSet.GetFirstHediffOfDef(Aphrodisiac);
+            if (existingAphrodisiac != null)
+            {
+                existingAphrodisiac.Severity = 1.0f;
+            }
+            else
+            {
+                Hediff newUnhealthy = HediffMaker.MakeHediff(Aphrodisiac, pawn, null);
+                newUnhealthy.Severity = 1.0f;
+                pawn.health.AddHediff(newUnhealthy);
+            }
+
         }
     }
 
