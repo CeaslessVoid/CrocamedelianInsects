@@ -68,8 +68,8 @@ namespace CrocamedelianInsects
         //private int MaxDistanceFromOtherHives = CrIGameComponent.Settings.CrIMaxHiveDistance;
         //private int RequiredJellyCount        = CrIGameComponent.Settings.CrINewHiveCost;
 
-        public int MinDistanceFromOtherHives = 8;
-        public int MaxDistanceFromOtherHives = 14;
+        private int MinDistanceFromOtherHives = 8;
+        private int MaxDistanceFromOtherHives = 14;
 
         protected override Job TryGiveJob(Pawn pawn)
         {
