@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/HediffDef[defName="RJW_Cocoon"]</xpath>
+		<value>
+			<renderNodeProperties>
+				<li>
+					<debugLabel>Cocoon</debugLabel>
+					<nodeClass>CrocamedelianInsects.PawnRenderNode_Cocoon</nodeClass>
+					<workerClass>PawnRenderNodeWorker_Body</workerClass>
+					<baseLayer>45</baseLayer>
+					<parentTagDef>Body</parentTagDef>
+				</li>
+			</renderNodeProperties>
+		</value>
+	</Operation>
+
+</Patch>

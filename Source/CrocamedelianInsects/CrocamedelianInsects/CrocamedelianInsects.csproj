@@ -59,8 +59,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Debug.cs" />
     <Compile Include="BuildNewHive.cs" />
     <Compile Include="BuildOnahole.cs" />
+    <Compile Include="CocoonRender.cs" />
+    <Compile Include="Hediff_SwarmingInfection.cs" />
     <Compile Include="HaulToHive.cs" />
     <Compile Include="DefOfs.cs" />
     <Compile Include="CocoonPatch.cs" />
@@ -68,7 +71,7 @@
     <Compile Include="ModSettings.cs" />
     <Compile Include="Util.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="Copy.cs" />
+    <Compile Include="AAAA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
