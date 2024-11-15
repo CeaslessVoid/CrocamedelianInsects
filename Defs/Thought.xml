@@ -15,7 +15,7 @@
 		</stages>
 	</ThoughtDef>
 
-  <ThoughtDef>
+  	<ThoughtDef>
 		<defName>ZoophileSwarmInfection</defName>
 		<thoughtClass>Thought_Memory</thoughtClass>
 		<durationDays>1.0</durationDays>
@@ -26,6 +26,21 @@
 				<label>Body Infested</label>
 				<description>My body is swarming with these things, my insides feel sticky, and yet it feels so good...</description>
 				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>BrainSwarmInfection</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>1.0</durationDays>
+		<stackLimit>5</stackLimit>
+		<stackedEffectMultiplier>0.2</stackedEffectMultiplier>
+		<stages>
+			<li>
+				<label>I can't... Stop...</label>
+				<description>I can feel something moving inside my skill. Every time I think, I feel a wave of pleasure.</description>
+				<baseMoodEffect>2</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

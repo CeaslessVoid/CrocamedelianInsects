@@ -52,6 +52,11 @@ namespace CrocamedelianInsects
                 {
                     BreakWomb();
                 }
+
+                if (this.Part.def.defName == "Brain")
+                {
+                    ApplySwarmInfectionThoughtBrain();
+                }
             }
         }
 
@@ -130,6 +135,12 @@ namespace CrocamedelianInsects
                 pawn.needs.mood.thoughts.memories.TryGainMemory(thoughtDef);
             }
             
+        }
+
+        private void ApplySwarmInfectionThoughtBrain()
+        {
+            ThoughtDef thoughtDef = ThoughtDef.Named("BrainSwarmInfection");
+            pawn.needs.mood.thoughts.memories.TryGainMemory(thoughtDef);
         }
 
         private void SpawnMaggots()

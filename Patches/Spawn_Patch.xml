@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Hive"]/comps/li[@Class="CompProperties_SpawnerPawn"]/spawnablePawnKinds</xpath>
+		<value>
+			<li>Terrothid</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Hive"]/comps/li[@Class="CompProperties_SpawnerPawn"]/spawnablePawnKinds</xpath>
+		<value>
+			<li>Mesmerite</li>
+		</value>
+	</Operation>
+</Patch>

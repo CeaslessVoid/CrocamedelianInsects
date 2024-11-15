@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ToolCapacityDef>
+    <defName>Implant</defName>
+  </ToolCapacityDef>
+
+  <ManeuverDef>
+    <defName>MesmeriteImplant</defName>
+    <requiredCapacity>Implant</requiredCapacity>
+    <verb>
+      <verbClass>CrocamedelianInsects.Verb_MeleeAttackInject</verbClass>
+      <meleeDamageDef>Cut</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+</Defs>

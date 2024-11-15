@@ -90,9 +90,9 @@
     <defName>Terrothid</defName>
     <label>Terrothid</label>
     <race>Terrothid</race>
-    <combatPower>75</combatPower>
+    <combatPower>200</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
-    <ecoSystemWeight>0.35</ecoSystemWeight>
+    <ecoSystemWeight>0.1</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -134,5 +134,154 @@
     </lifeStages>
   </PawnKindDef>
 
+  <!--  -->
+
+  <ThingDef ParentName="BaseInsect">
+    <defName>Mesmerite</defName>
+    <label>mesmerite</label>
+    <description>A small, insidious insectoid equipped with a needle-like injector used to implant mind-controlling parasites into its hosts. Though weak in combat, its ability to manipulate minds makes it a dangerous foe.</description>
+    
+    <statBases>
+      <MoveSpeed>2.75</MoveSpeed>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <MarketValue>200</MarketValue>
+      <LeatherAmount>0</LeatherAmount>
+    </statBases>
+
+    <uiIconScale>2</uiIconScale>
+
+    <tools>
+
+      <li>
+        <label>mandibles</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+
+      <li>
+        <label>implant</label>
+        <capacities>
+          <li>Implant</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>1.5</chanceFactor>
+      </li>
+
+    </tools>
+
+    <race>
+      <body>BeetleLike</body>
+      <baseBodySize>0.5</baseBodySize>
+      <baseHungerRate>0.15</baseHungerRate>
+      <baseHealthScale>1.0</baseHealthScale>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <lifeExpectancy>10</lifeExpectancy>
+      <wildness>0.3</wildness>
+      <trainability>Advanced</trainability>
+
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.03</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.14)</li>
+        <li>(0.07, 0, 0.08)</li>
+        <li>(0.0, 0, -0.12)</li>
+        <li>(-0.07, 0, 0.08)</li>
+      </headPosPerRotation>
+    </race>
+
+    <tradeTags>
+      <li>AnimalInsect</li>
+    </tradeTags>
+
+  </ThingDef>
+  
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Mesmerite</defName>
+    <label>Mesmerite</label>
+    <race>Mesmerite</race>
+    <combatPower>150</combatPower>
+    <canArriveManhunter>false</canArriveManhunter>
+    <ecoSystemWeight>0.05</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mesmerite/Mesmerite</texPath>
+          <drawSize>0.2</drawSize>
+          <color>(156,148,125)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mesmerite/Mesmerite_dead</texPath>
+          <drawSize>0.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mesmerite/Mesmerite</texPath>
+          <drawSize>0.3</drawSize>
+          <color>(156,148,125)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mesmerite/Mesmerite_dead</texPath>
+          <drawSize>0.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mesmerite/Mesmerite</texPath>
+          <drawSize>1</drawSize>
+          <color>(156,148,125)</color>
+          <shadowData>
+            <volume>(0.4, 0.5, 0.37)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mesmerite/Mesmerite_dead</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
 
 </Defs>
