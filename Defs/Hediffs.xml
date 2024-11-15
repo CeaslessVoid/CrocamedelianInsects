@@ -5,7 +5,7 @@
     <label>Swarming infection</label>
     <description>A swarm of small insects are infesting the part of body, producing a strong aphrodisiac as they breed.</description>
     <hediffClass>CrocamedelianInsects.Hediff_SwarmingInfection</hediffClass>
-    <tendable>true</tendable>
+    <tendable>false</tendable>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>0.02</severityPerDay>
