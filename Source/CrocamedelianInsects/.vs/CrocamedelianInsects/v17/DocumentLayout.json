@@ -3,19 +3,11 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\crocamedelianinsects\\source\\crocamedelianinsects\\crocamedelianinsects\\mesmerite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\mesmerite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\crocamedelianinsects\\source\\crocamedelianinsects\\crocamedelianinsects\\buildnewhive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\buildnewhive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\crocamedelianinsects\\hediff_swarminginfection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\hediff_swarminginfection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\crocamedelianinsects\\modsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\crocamedelianinsects\\source\\crocamedelianinsects\\crocamedelianinsects\\modsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F008AEE0-3657-4679-8621-16412252B979}|CrocamedelianInsects\\CrocamedelianInsects.csproj|solutionrelative:crocamedelianinsects\\modsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,52 +22,27 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ModSettings.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\ModSettings.cs",
               "RelativeDocumentMoniker": "CrocamedelianInsects\\ModSettings.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\ModSettings.cs",
               "RelativeToolTip": "CrocamedelianInsects\\ModSettings.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAiwCAAAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAB9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T09:45:40.1Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Mesmerite.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\Mesmerite.cs",
-              "RelativeDocumentMoniker": "CrocamedelianInsects\\Mesmerite.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\Mesmerite.cs",
-              "RelativeToolTip": "CrocamedelianInsects\\Mesmerite.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABpAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T09:33:30.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BuildNewHive.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\BuildNewHive.cs",
-              "RelativeDocumentMoniker": "CrocamedelianInsects\\BuildNewHive.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\BuildNewHive.cs",
-              "RelativeToolTip": "CrocamedelianInsects\\BuildNewHive.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T09:31:12.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Hediff_SwarmingInfection.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\Hediff_SwarmingInfection.cs",
               "RelativeDocumentMoniker": "CrocamedelianInsects\\Hediff_SwarmingInfection.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CrocamedelianInsects\\Source\\CrocamedelianInsects\\CrocamedelianInsects\\Hediff_SwarmingInfection.cs",
               "RelativeToolTip": "CrocamedelianInsects\\Hediff_SwarmingInfection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAI0AAABJAAAA",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAgwCIAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T05:21:38.695Z",
               "EditorCaption": ""

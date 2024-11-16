@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "Hive"]/comps/li[@Class="CompProperties_SpawnerPawn"]/spawnablePawnKinds</xpath>
@@ -10,7 +10,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef[defName = "Hive"]/comps/li[@Class="CompProperties_SpawnerPawn"]/spawnablePawnKinds</xpath>
 		<value>
-			<li>Mesmerite</li>
+			<li>Stillicid</li>
 		</value>
 	</Operation>
-</Patch>
+</Patch> -->

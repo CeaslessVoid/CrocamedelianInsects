@@ -117,46 +117,4 @@
 		</stages>
 	</HediffDef>
 
-
-  <HediffDef>
-		<defName>MesmeriteInsect</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		<label>Mesmerite parasite</label>
-		<description>A small parasite from a Mesmerite has been injected here.</description>
-		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<maxSeverity>1.0</maxSeverity>
-    <isBad>true</isBad>
-    <tendable>false</tendable>
-		<stages>
-			<li>
-				<statOffsets>
-					<SexFrequency>1.2</SexFrequency>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
-
-  <HediffDef>
-    <defName>ParasiteImplantCooldown</defName>
-    <label>implant cooldown</label>
-    <description>The Mesmerite recently implanted a parasite and must wait before attempting another implantation.</description>
-    <hediffClass>HediffWithComps</hediffClass>
-    <isBad>false</isBad>
-    <tendable>false</tendable>
-    <comps>
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>
-          <min>3000</min>
-					<max>3000</max>
-        </disappearsAfterTicks>
-      </li>
-    </comps>
-    <stages>
-			<li>
-				<becomeVisible>false</becomeVisible>
-			</li>
-		</stages>
-  </HediffDef>
-
 </Defs>

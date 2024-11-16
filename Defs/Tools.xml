@@ -5,7 +5,7 @@
   </ToolCapacityDef>
 
   <ManeuverDef>
-    <defName>MesmeriteImplant</defName>
+    <defName>StillicidImplant</defName>
     <requiredCapacity>Implant</requiredCapacity>
     <verb>
       <verbClass>CrocamedelianInsects.Verb_MeleeAttackInject</verbClass>
